@@ -13,7 +13,7 @@ input{
     width: 300px;
     padding: 5px;
     border-radius: 30px;
-    height: 30px;
+    height: 40px;
     font-size: 30px;
     margin: 5px 40px;
     background-color: aqua;
@@ -27,3 +27,4 @@ label{
 input[
  type=submit
 ]{height: 50px}
+#reg{font-size: 25px;}
