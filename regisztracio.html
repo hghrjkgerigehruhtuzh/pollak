@@ -37,63 +37,94 @@
 
     </header>
     <main>
-<form action="regisztracio.html" class="szöveg">
+        <div class="regiszt">
+            <div class="col-md-7 col-lg-8">
+           
+            <form class="needs-validation" novalidate="">
+              <div class="row g-3">
+                <div class="col-sm-6">
+                  <label for="firstName" class="form-label">First name</label>
+                  <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+                  <div class="invalid-feedback">
+                    Valid first name is required.
+                  </div>
+                </div>
+    
+                <div class="col-sm-6">
+                  <label for="lastName" class="form-label">Last name</label>
+                  <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+                  <div class="invalid-feedback">
+                    Valid last name is required.
+                  </div>
+                </div>
+    
+                <div class="col-12">
+                  <label for="username" class="form-label">Username</label>
+                  <div class="input-group has-validation">
+                    <span class="input-group-text">@</span>
+                    <input type="text" class="form-control" id="username" placeholder="Username" required="">
+                  <div class="invalid-feedback">
+                      Your username is required.
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="col-12">
+                  <label for="email" class="form-label">Email <span class="text-body-secondary">(Optional)</span></label>
+                  <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                  <div class="invalid-feedback">
+                    Please enter a valid email address for shipping updates.
+                  </div>
+                </div>
+    
+                <div class="col-12">
+                  <label for="address" class="form-label">Address</label>
+                  <input type="text" class="form-control" id="address" placeholder="1234 Main St" required="">
+                  <div class="invalid-feedback">
+                    Please enter your shipping address.
+                  </div>
+                </div>
+    
+                <div class="col-12">
+                  <label for="address2" class="form-label">Address 2 <span class="text-body-secondary">(Optional)</span></label>
+                  <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
+                </div>
+    
+                <div class="col-md-5">
+                  <label for="country" class="form-label">Ország</label>
+                  <select class="form-select" id="country" required="">
+                    <option value="">válasz</option>
+                    <option>Magyarország</option>
+                  </select>
+                  <div class="invalid-feedback">
+                    Please select a valid country.
+                  </div>
+                </div>
+    
+               
+             
+                  
+                
+              </div>
+    
+    
 
-    <label for="vnev">vezetéknév</label>
-    <input id="vnev" type="text" ><br>
-
-    <label for="knév">Keresztnév</label>
-    <input id="knév" type="text"><br>
-
-<label for="jel">Jelszó</label>
-<input id="jel" type="password"><br>
-
-<label for="jelsz">Jelszó megerősítés</label>
-<input id="jelsz" type="password"><br>
-
-<label for="email">email</label>
-<input id="email" type="email"><br>
-
-<label for="utca">utca</label>
-<input id="utca" type="text"><br>
-
-<label for="házszám">házszám</label>
-<input id="házszám" type="number"><br>
-
-<label for="település">település</label>
-<input id="település" type="text"><br>
-
-<label for="irányítószám">irányítószám</label>
-<input id="irányítószám" type="number"><br>
-
-<label for="ország">ország</label>
-<select  id="ország">
-<option value="Magyarország">Magyarország</option>
-<option value="Németország">Németország</option>
-<option value="Franciaország">Franciaország</option>
-<option value="Olaszország">Olaszország</option>
-<option value="Anglia">Anglia</option>
-
-
-
-</select><br>
-
-<label  for="telefonszám">telefonszám</label>
-<input id="telefonszám" type="tel"><br>
-
-<label for="nem">nem</label>
-<input id="nem" type="text"><br>
-
-<label for="ASZF">ASZF</label>
-<input id="ASZF" type="text"><br>
-
-<label for="Capctcha">Capctcha</label>
-<input id="Capctcha" type="text"><br>
-
-<input id="reg" type="submit">
-
-</form>
-
+                
+              
+              
+    
+              
+    
+             
+      
+    
+              <hr class="my-4">
+    
+              <button class="w-100 btn btn-primary btn-lg" type="submit">Küldés</button>
+            </form>
+          </div>
+</div>
+        
 
     </main>
 
